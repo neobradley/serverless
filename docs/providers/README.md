@@ -1,6 +1,6 @@
 <!--
-title: Serverless - Providers
-menuText: Serverless Providers
+title: Serverless - Infrastructure Providers
+menuText: Providers
 layout: Doc
 -->
 
@@ -8,7 +8,7 @@ layout: Doc
 ### [Read this on the main serverless docs site](https://www.serverless.com/docs/providers/)
 <!-- DOCS-SITE-LINK:END -->
 
-# Infrastructure Providers
+# Serverless Infrastructure Providers
 
 Providers are where your serverless functions run in the cloud.
 

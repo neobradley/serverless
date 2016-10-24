@@ -12,9 +12,9 @@ layout: Doc
 
 The Serverless Framework allows you to deploy auto-scaling, pay-per-execution, event-driven functions to any cloud.  We currently support Amazon Web Service's Lambda, and are expanding to support other cloud providers.
 
-<div class="docs-sections">
-  <div class="docs-section">
-    <div class="docs-section-header">
+<div class="docsSections">
+  <div class="docsSection">
+    <div class="docsSectionHeader">
       <a href="./providers/aws/guide/">
       <img src="https://s3-us-west-2.amazonaws.com/assets.site.serverless.com/images/docs_guide_aws5.jpg" alt="Serverless Framework AWS Lambda Guide" width="250" draggable="false">
       </a>
@@ -38,8 +38,8 @@ The Serverless Framework allows you to deploy auto-scaling, pay-per-execution, e
     </div>
   </div>
 
-  <div class="docs-section">
-    <div class="docs-section-header">
+  <div class="docsSection">
+    <div class="docsSectionHeader">
       <a href="./providers/aws/cli-reference/">
       <img src="https://s3-us-west-2.amazonaws.com/assets.site.serverless.com/images/docs_clireference_aws4.jpg" alt="Serverless Framework AWS Lambda CLI Reference" width="250" draggable="false">
       </a>
@@ -57,8 +57,8 @@ The Serverless Framework allows you to deploy auto-scaling, pay-per-execution, e
     </div>
   </div>
 
-  <div class="docs-section">
-    <div class="docs-section-header">
+  <div class="docsSection">
+    <div class="docsSectionHeader">
       <a href="./providers/aws/events/">
       <img src="https://s3-us-west-2.amazonaws.com/assets.site.serverless.com/images/docs_events_aws4.jpg" alt="Serverless Framework AWS Lambda Events"  width="250" draggable="false">
       </a>
@@ -74,8 +74,8 @@ The Serverless Framework allows you to deploy auto-scaling, pay-per-execution, e
     </div>
   </div>
 
-  <div class="docs-section">
-    <div class="docs-section-header">
+  <div class="docsSection">
+    <div class="docsSectionHeader">
       <a href="./providers/aws/examples/">
       <img src="https://s3-us-west-2.amazonaws.com/assets.site.serverless.com/images/docs_examples_aws4.jpg" alt="Serverless Framework AWS Lambda Examples" width="250" draggable="false">
       </a>
