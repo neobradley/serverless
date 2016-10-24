@@ -12,7 +12,7 @@ layout: Doc
 
 # Services
 
-A *Service* is where you define your AWS Lambda Functions, the Events that trigger them and any AWS infrastructure Resources they require, all defined in a file called `serverless.yml`.
+A *Service* is like a Project.  It's where you define your AWS Lambda Functions, the Events that trigger them and any AWS infrastructure Resources they require, all defined in a file called `serverless.yml`.
 
 To get started building your first Serverless Framework project, create a *Service*.
 

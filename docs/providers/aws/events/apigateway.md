@@ -1,6 +1,6 @@
 <!--
 title: Serverless Framework - AWS Lambda Events - API Gateway
-menuText: API Gateway Event config
+menuText: API Gateway
 menuOrder: 1
 description: Setting up AWS API Gateway Events with AWS Lambda via the Serverless Framework
 layout: Doc
