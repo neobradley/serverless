@@ -2,65 +2,54 @@
 title: Serverless Framework Documentation
 menuText: Docs
 layout: Doc
+menuItems:
+  - {menuText: "Get Started", path: /framework/docs/getting-started/}
+  - {menuText: "Dashboard Reference", path: /framework/docs/dashboard/}
+  - {menuText: "- Insights", path: /framework/docs/dashboard/insights/}
+  - {menuText: "- Notifications", path: /framework/docs/dashboard/notifications/}
+  - {menuText: "- Output Variables", path: /framework/docs/dashboard/output-variables/}
+  - {menuText: "- Secrets", path: /framework/docs/dashboard/secrets/}
+  - {menuText: "- Safeguards", path: /framework/docs/dashboard/safeguards/}
+  - {menuText: "- Access Roles", path: /framework/docs/dashboard/access-roles/}
+  - {menuText: "- Profiles", path: /framework/docs/dashboard/profiles/}
+  - {menuText: "- Pipelines", path: /framework/docs/dashboard/pipelines/}
+  - {menuText: "Provider CLI References", path: /framework/docs/providers}
+  - {menuText: "- AWS", path: /framework/docs/providers/aws/}
+  - {menuText: "- Azure", path: /framework/docs/providers/azure/}
+  - {menuText: "- fn", path: /framework/docs/providers/fn/}
+  - {menuText: "- Google", path: /framework/docs/providers/google/}
+  - {menuText: "- OpenWhisk", path: /framework/docs/providers/openwhisk/}
+  - {menuText: "- Kubeless" , path: /framework/docs/providers/kubeless/}
+  - {menuText: "- Knative" , path: /framework/docs/providers/knative/}
+  - {menuText: "- Spotinst" , path: /framework/docs/providers/spotinst/}
+  - {menuText: "- Cloudflare" , path: /framework/docs/providers/cloudflare/}
+  - {menuText: "- Alibaba Cloud" , path: /framework/docs/providers/aliyun/}
+  - {menuText: "- Tencent Cloud" , path: /framework/docs/providers/tencent/}
+  - {menuText: "Examples", path: https://serverless.com/examples/}
+  - {menuText: "Tutorials", path: https://serverless.com/blog/category/guides-and-tutorials/}
 -->
 
-# Serverless Documentation
+<!-- DOCS-SITE-LINK:START automatically generated  -->
 
-Welcome to the Serverless documentation.
+### [Read this on the main serverless docs site](https://www.serverless.com/framework/docs/)
 
-- [Quick Start Guide](./01-guide/)
-- [Core Concepts](#concepts)
-- [CLI Reference](./03-cli-reference/)
-- [Providers](#providers)
-- [Extending Serverless](./04-extending-serverless/)
-- [Contributing to Serverless](#contributing)
+<!-- DOCS-SITE-LINK:END -->
 
-## Providers
-- [AWS Integration Docs](./02-providers/aws/)
+# Serverless Framework Documentation
 
-## Concepts
+Develop, deploy, troubleshoot and secure your serverless applications with radically less overhead and cost by using the Serverless Framework. The Serverless Framework consists of an open source CLI and a hosted dashboard. Together, they provide you with full serverless application lifecycle management.
 
-Before we begin, let's run through some of the main concepts behind serverless.
+**Are you new to serverless application development?**
 
-* [Functions](#functions)
-* [Events](#events)
-* [Resources](#resources)
-* [Services](#services)
-* [Plugins](#plugins)
+Sign up for our [hosted dashboard](https://app.serverless.com) (it’s free) and we’ll help deploy your first serverless app in minutes.
 
-### Functions
+If you prefer to start on the CLI, use our [get started](https://serverless.com/framework/docs/getting-started/) guide.
 
-Functions are the essential part for any serverless infrastructure. Several functions together form a service. A service typically solves one particular problem in your infrastructure.
+**If you are an experienced user of the Serverless Framework**
 
-### Events
+Our [Pro dashboard](https://serverless.com/pro/) allows you to import existing projects. Track performance, troubleshoot, configure CI/CD and deployment policies, and get end-to-end serverless application lifecycle management.
+[Get started](https://app.serverless.com) for free.
 
-Serverless is used to build event driven architecture. Basically everything which can trigger a function is an event.
+Have questions? Visit our [Forum](https://forum.serverless.com/).
 
-Events could be HTTP requests, events fired from a cloud storage (like a S3 bucket), scheduled events, etc.
-
-- [AWS Events](./02-providers/aws/events/)
-
-### Resources
-
-Resources are the different pieces that comprise your infrastructure like databases, storage buckets, API Gateways or other resources your provider lets you configure.
-
-### Services
-
-A *Serverless service* is a group of one or multiple functions and any resources they require. By grouping related functions together, it's easier to share code and resources between those functions. Services are also designed to be completely independent, which helps teams develop more quickly without waiting for others.
-
-### Plugins
-
-Here you can read how to develop your own Serverless plugins. We'll get into details on how to write custom plugins to extend the functionality of Serverless. Furthermore we'll look into the way how you can use your plugin knowledge to integrate your own provider into the Serverless framework.
-
-- [Building plugins](./04-extending-serverless/)
-
-Connect with the community on [gitter](https://gitter.im/serverless/serverless) or in the [Forum](http://forum.serverless.com)
-
-## Contributing
-We love our contributors! Please read our [Contributing Document](../CONTRIBUTING.md) to learn how you can start working on the Framework yourself.
-
-Check out our [help-wanted](https://github.com/serverless/serverless/labels/help-wanted) or [help-wanted-easy](https://github.com/serverless/serverless/labels/help-wanted-easy) labels to find issues we want to move forward on with your help.
-
-## Framework statistics
-
-[Framework statistics](./framework-statistics.md)
+For inspiration, check out [example code](https://serverless.com/examples/), [guides](https://serverless.com/blog/category/guides-and-tutorials/) and [use cases](https://serverless.com/learn/use-cases/).

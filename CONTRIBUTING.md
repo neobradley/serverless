@@ -1,85 +1,110 @@
 # Contributing Guidelines
 
-Welcome, and thanks in advance for your help!  Please follow these simple guidelines :)
+We are always looking to promote good contributors to be maintainers and provide them a front-row seat to serverless innovation.
+
+If you would like to be a maintainer for the [Serverless Framework](https://github.com/serverless/serverless) or any of our plugins, please get started with making code contributions and engaging with open issues/PRs. Also, please reach out to any of [Serverless organization](https://github.com/serverless) members to express your interest.
+
+We'd love to collaborate closely with amazing developers as we drive the development of this open technology into the future.
+
+Welcome, and thanks in advance for your help!
 
 # How to contribute to Serverless
 
-## When you want to start on something we need
+## Setup
 
-Check out our [help-wanted](https://github.com/serverless/serverless/labels/help-wanted) or [help-wanted-easy](https://github.com/serverless/serverless/labels/help-wanted-easy) labels to find issues we want to move forward on with your help.
+Once you've cloned forked repository, all is needed is to run `npm install` at its root folder
 
-In there you will find different issues that we think are important and need some help with. If you're just starting to contribute to Serverless you might want to check out the `help-wanted-easy` label first, but as an experienced developer the `help-wanted` should be fine as well. The difference is mostly in how much time the tasks will take to implement. Thanks for helping us with those, we really appreciate it.
+## Anatomy of a Framework
 
-## When you want to propose a new feature or bug fix
-* Please make sure there is an open issue discussing your Contribution.
-* If there isn't, please open an issue so we can talk about it before you invest time into the Implementation.
-* When creating an issue follow the guide that Github shows so we have enough information about your proposal.
+Check [docs/anatomy.md](./docs/anatomy.md)
 
-## Pull Requests
-Please follow these Pull Request guidelines when creating Pull Requests:
-* If an Issue exists, leave a comment there that you are working on a solution so nobody else jumps on it.
-* If an Issue does not exist, create a new Issue, detail your changes.  We recommend waiting until we accept it, so you don't waste your precious time.
-* Follow our **Testing** and **Code Style** guidelines below.
-* Start commit messages with a lowercase verb such as "add", "fix", "refactor", "remove".
-* Submit your PR and make sure the Travis-CI builds don't fail and the code coverage isn't lowered.
-* Reference the issue in your PR.
+## When you propose a new feature or bug fix
 
-## Issues
-Please follow these Issue guidelines for opening Issues:
-* Make sure your Issue is not a duplicate.
-* Make sure your Issue is for a *feature request*, *bug report*, or *a discussion about a relevant topic*.  For everything else, please use our [Discourse Forum](http://forum.serverless.com)
+Please make sure there is an open issue discussing your contribution before jumping into a Pull Request!
+There are just a few situations (listed below) in which it is fine to submit PR without a corresponding issue:
 
-### Code Style
-We aim for clean, consistent code style.  We're using ESlint to check for codestyle issues using the Airbnb preset. If ESlint issues are found our build will fail and we can't merge the PR.  To help reduce the effort of creating contributions with this style, an [.editorconfig file](http://editorconfig.org/) is provided that your editor may use to override any conflicting global defaults and automate a subset of the style settings.  You may need to enable EditorConfig's use by changing a setting or installing a plugin.  Using it is not compulsory.
+- Documentation update
+- Obvious bug fix
+- Maintenance improvement
 
-Please follow these Code Style guidelines when writing your unit tests:
-* In the root of our repo, use this command to check for styling issues: `npm run lint`
-* There are likely ESlint plugins for your favorite code editor that will make this easier too!
+In all other cases please check if there's an open an issue discussing the given proposal, if there is not, create an issue respecting all its template remarks.
 
-### Testing
-We aim for 100% test coverage, so make sure your tests cover as much of your code as possible.  For test coverage, we use Istanbul locally and Coveralls on our repo.  During development, you can easily check coverage by running `npm test`, then opening the `index.html` file inside the `coverage` directory.
+In non-trivial cases please propose and let us review an implementation spec (in the corresponding issue) before jumping into implementation.
 
-Please follow these Testing guidelines when writing your unit tests:
-*  Include a top-level `describe('ClassName')` block, with the name of the class you are testing.
-*  Inside that top-level `describe()` block, create another `describe('#methodOne()')` block for each class method you might create or modify.
-*  For each method, include an `it('should do something')` test case for each logical edge case in your changes.
-*  As you write tests, check the code coverage and make sure all lines of code are covered.  If not, just add more test cases until everything is covered.
-*  For reference and inspiration, please check our `tests` directory.
+Do not submit draft PRs. Submit only finalized work which is ready for merge. If you have any doubts related to implementation work please discuss in the corresponding issue.
 
-#### Testing templates
-If you add a new template or want to test a template after changing it you can run the template integration tests. Make sure you have `docker` and `docker-compose` installed as they are required. The `docker` containers we're using through compose are automatically including your `$HOME/.aws` folder so you can deploy to AWS.
+Once PR was reviewed and some changes were suggested, please ensure to re-request review after all new changes were pushed. It's the best, noiseless way to inform maintainers that your work is ready to be checked again
 
-To run all integration tests run:
+## When you want to work on an existing issue
 
-```
-./tests/templates/test_all_templates
-```
+**Note:** Please write a quick comment in the corresponding issue and ask if the feature is still relevant and that you want to jump into the implementation.
 
-To run only a specific integration test run:
+Check out our [help wanted](https://github.com/serverless/serverless/labels/help%20wanted) or [good first issue](https://github.com/serverless/serverless/labels/good%20first%20issue) labels to find issues we want to move forward with your help.
 
-```
-tests/templates/integration-test-template TEMPLATE_NAME BUILD_COMMAND
-```
+We will do our best to respond/review/merge your PR according to priority. We hope that you stay engaged with us during this period to ensure QA. Please note that the PR will be closed if there hasn't been any activity for a long time (~ 30 days) to keep us focused and keep the repo clean.
 
-so for example:
+## Reviewing Pull Requests
+
+Another really useful way to contribute to Serverless is to review other people's Pull Requests. Having feedback from multiple people is helpful and reduces the overall time to make a final decision about the Pull Request.
+
+## Writing / improving documentation
+
+Our documentation lives on GitHub in the [docs](docs) directory. Do you see a typo or other ways to improve it? Feel free to edit it and submit a Pull Request!
+
+## Providing support
+
+The easiest thing you can do to help us move forward and make an impact on our progress is to simply provide support to other people having difficulties with their Serverless projects.
+
+You can do that by replying to [issues on Github](https://github.com/serverless/serverless/issues), chatting with other community members in [our Chat](http://chat.serverless.com), or helping with questions in [our Forum](http://forum.serverless.com).
+
+---
+
+# Code Style
+
+We aim for a clean, consistent code style. We're using [Prettier](https://prettier.io/) to confirm one code formatting style and [ESlint](https://eslint.org/) helps us to stay away from obvious issues that can be picked via static analysis.
+
+Ideally, you should have Prettier and ESlint integrated into your code editor, which will help you not think about specific rules and be sure you submit the code that follows guidelines.
+
+## Verifying prettier formatting
 
 ```
-tests/templates/integration-test-template aws-java-maven mvn package
+npm run prettier-check
 ```
 
-If you add a new template make sure to add it to the `test_all_templates` file and configure the `docker-compose.yml` file for your template.
+## Verifying linting style
 
+```
+npm run lint
+```
 
-## Providing Support
-The easiest thing you can do to help us move forward and make an impact on our progress is to simply provide support to other people having difficulties with their Serverless projects. You can do that by replying to [issues on Github](https://github.com/serverless/serverless/issues), chatting with other community members in [our Chat](http://chat.serverless.com) or helping with questions in [our Forum](http://forum.serverless.com).
+## Other guidelines
 
-## Improving Documentation
-Maintaining and updating the docs on a regular basis is a hard task. The more eyeballs on the docs the higher quality it'll get and the less chances there will be for typos and confusion. We keep our docs in the `docs` folder in our main repo. If you see any issues with our docs, simply open an issue or a PR.
+- Minimize [lodash](https://lodash.com/) usage - resort to it, only if given part of logic cannot be expressed easily with native language constructs
+- When writing asynchronous code, ensure to take advantage of [async functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function) and native `Promise` API. Do not rely on [Bluebird](http://bluebirdjs.com) even though still large parts of old code rely on it. We're looking forward to drop this dependency in next months.
 
-## Our Code of Conduct
-Finally, to make sure you have a pleasant experience while being in our welcoming community, please read our [code of conduct](code_of_conduct.md). It outlines our core values and believes and will make working together a happier experience.
+### Configuring deprecations
 
-Thanks again for being a contributor to the Serverless Community!
+Ideally, all breaking changes should be first (before being shipped with next major) communicated with deprecation logs.
+
+Deprecation log can be configured with the following steps:
+
+1. At the logic point where deprecate feature is being used, write a deprecation log with `serverless._logDeprecation` util. It accepts two arguments:
+
+- `code` (e.g. `DEPRECATED_FEATURE_NAME`). Created to identify log programmatically, also used to construct link on documentation page
+- `message` Deprecation message to be displayed to the user
+
+2. The Document introduced deprecation at `docs/depreactions.md` (new deprecation should be listed as first, follow the format of other documented deprecations)
+
+# Testing
+
+See [test/README](test/README.md)
+
+# Our Code of Conduct
+
+Finally, to make sure you have a pleasant experience while being in our welcoming community, please read our [code of conduct](CODE_OF_CONDUCT.md). It outlines our core values and believes and will make working together with a happier experience.
+
+Thanks again for being a contributor to the Serverless Community :tada:!
 
 Cheers,
-The [Serverless](http://www.serverless.com) Team
+
+The :zap: [Serverless](http://www.serverless.com) Team
